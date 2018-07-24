@@ -1,0 +1,8 @@
+D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\obj\Debug\ManageNN.csprojResolveAssemblyReference.cache
+D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\bin\Debug\ManageNN.dll
+D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\bin\Debug\ManageNN.pdb
+D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\obj\Debug\ManageNN.dll
+D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\obj\Debug\ManageNN.pdb
