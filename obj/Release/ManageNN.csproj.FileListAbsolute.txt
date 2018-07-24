@@ -1,5 +1,0 @@
-D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\bin\Release\ManageNN.dll
-D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\bin\Release\ManageNN.pdb
-D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\obj\Release\ManageNN.csprojResolveAssemblyReference.cache
-D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\obj\Release\ManageNN.dll
-D:\HarperCollins Publishers\CRM - Technical Documentation\Plugins\ManageNN\obj\Release\ManageNN.pdb
