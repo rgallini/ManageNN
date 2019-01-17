@@ -1,4 +1,4 @@
-﻿using Microsoft.Crm.Sdk.Messages;
+using Microsoft.Crm.Sdk.Messages;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Messages;
 using Microsoft.Xrm.Sdk.Workflow;
@@ -6,13 +6,15 @@ using System;
 using System.Text.RegularExpressions;
 using System.Activities;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using ManageNN;
 
 namespace ManageNN
 {
-    public class Disassociate : CodeActivity
+    public class Associate : CodeActivity
     {
         #region "Parameter Definition"
         [RequiredArgument]
@@ -36,7 +38,10 @@ namespace ManageNN
         public InArgument<String> NNrelationship { get; set; }
 
         [Output("Success")]
-        public OutArgument<Boolean> success { get; set; }
+        public OutArgument<Boolean> success { get;  set; }
+
+        [Output("Error Message")]
+        public OutArgument<String> errmsg { get; set; }
         #endregion
 
         protected override void Execute(CodeActivityContext executionContext)
@@ -63,7 +68,7 @@ namespace ManageNN
             #region "Execution"
             try
             {
-                DisassociateRequest request = new DisassociateRequest();
+                AssociateRequest request = new AssociateRequest();
                 EntityReference moniker1 = new EntityReference(_entity1, _guid1);
                 EntityReference moniker2 = new EntityReference(_entity2, _guid2);
                 EntityReferenceCollection relatedEntities = new EntityReferenceCollection();
@@ -74,7 +79,10 @@ namespace ManageNN
                 objCommon.service.Execute(request);
                 success.Set(executionContext, true);
             }
-            catch {}
+            catch (Exception ex) 
+            {
+                errmsg.Set(executionContext, ex.Message);
+            }
             #endregion
         }
     }
